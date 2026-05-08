@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andhika Bagaskara - QA Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">AB.</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-greeting">Hi, I'm</p>
+                <h1 class="hero-name">Andhika Bagaskara<br>Putra Nusantara</h1>
+                <h2 class="hero-title">QA/QC Engineer</h2>
+                <p class="hero-description">
+                    A dedicated QA Engineer with 3+ years of experience in manual testing, 
+                    API testing, and automation testing for web & mobile applications. 
+                    Passionate about ensuring software quality and delivering reliable products.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="docs/CV - Andhika Bagaskara Putra Nusantara.pdf" download class="btn btn-outline">
+                        <span class="btn-icon">&#8595;</span> Download CV
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image">
+                    <img src="assets/img/profile.jpeg" alt="Andhika Bagaskara Putra Nusantara">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I am a dedicated QA/QC Engineer with 3+ years of experience in both manual and automated testing. 
+                        Focused on ensuring software quality and functionality across various applications.
+                    </p>
+                    <p>
+                        Proficient in utilizing Java, Selenium, and Katalon Studio to enhance automation frameworks. 
+                        Experienced in collaborating with development teams to identify and resolve defects, 
+                        while continuously improving testing processes and methodologies.
+                    </p>
+                    <p>
+                        My expertise spans across manual testing, API testing, and automation testing 
+                        for both web and mobile platforms. I'm passionate about building robust test 
+                        frameworks that ensure product reliability and accelerate delivery.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">7+</span>
+                        <span class="stat-label">Projects Tested</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle">Selected projects I've contributed to as a QA Engineer</p>
+            
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="automation">Automation</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: PPOB -->
+                <div class="project-card" data-category="web mobile">
+                    <div class="project-header">
+                        <div class="project-icon">&#9881;</div>
+                        <span class="project-type">Payment Platform</span>
+                    </div>
+                    <h3>PPOB</h3>
+                    <p class="project-desc">
+                        Payment aggregator platform for digital products (mobile credits, data packages, utilities, game vouchers) with CMS, PWA, and mobile apps (Android & iOS).
+                    </p>
+                    <div class="project-scope">
+                        <span>Manual Testing</span>
+                        <span>API Testing</span>
+                        <span>Integration Testing</span>
+                        <span>Load Testing</span>
+                    </div>
+                    <div class="project-impact">
+                        <strong>Impact:</strong> Ensured payment reliability across multiple payment scenarios including edge cases (invalid numbers, inactive products, blocked accounts)
+                    </div>
+                </div>
+
+                <!-- Project 2: E-Commerce Mobile -->
+                <div class="project-card" data-category="mobile automation">
+                    <div class="project-header">
+                        <div class="project-icon">&#128722;</div>
+                        <span class="project-type">E-Commerce</span>
+                    </div>
+                    <h3>GROmart</h3>
+                    <p class="project-desc">
+                        Mobile e-commerce application for distributors to sell products directly to end users. Full marketplace experience with catalog, cart, and order management.
+                    </p>
+                    <div class="project-scope">
+                        <span>Mobile Automation</span>
+                        <span>Manual Testing</span>
+                        <span>API Testing</span>
+                        <span>Integration Testing</span>
+                    </div>
+                    <div class="project-impact">
+                        <strong>Impact:</strong> Built mobile automation test suite that accelerated regression cycles and supported manual testing team in parallel
+                    </div>
+                </div>
+
+                <!-- Project 3: AI Meeting Notes -->
+                <div class="project-card" data-category="web mobile">
+                    <div class="project-header">
+                        <div class="project-icon">&#129302;</div>
+                        <span class="project-type">AI-Powered</span>
+                    </div>
+                    <h3>MinuteX</h3>
+                    <p class="project-desc">
+                        AI-powered meeting notes generator with live transcription via bot (Google Meet/Zoom), audio recording for offline meetings, and audio upload for summary generation.
+                    </p>
+                    <div class="project-scope">
+                        <span>UI Testing</span>
+                        <span>Integration Testing</span>
+                        <span>AI Output Validation</span>
+                    </div>
+                    <div class="project-impact">
+                        <strong>Impact:</strong> Validated AI accuracy and identified hallucination cases, ensuring reliable meeting summaries for end users
+                    </div>
+                </div>
+
+                <!-- Project 4: Automation Framework -->
+                <div class="project-card" data-category="automation">
+                    <div class="project-header">
+                        <div class="project-icon">&#9881;</div>
+                        <span class="project-type">Framework</span>
+                    </div>
+                    <h3>Restructure Automation Project</h3>
+                    <p class="project-desc">
+                        Led migration from Katalon to Selenium. Built reusable component library for standardized UI elements (date pickers, dropdowns, tables) and established project structure standards.
+                    </p>
+                    <div class="project-scope">
+                        <span>Selenium</span>
+                        <span>Java</span>
+                        <span>Framework Architecture</span>
+                        <span>Documentation</span>
+                    </div>
+                    <div class="project-impact">
+                        <strong>Impact:</strong> Created reusable test library that eliminated redundant code across QA team, standardized automation practices company-wide
+                    </div>
+                </div>
+
+                <!-- Project 5: AI Lullaby App -->
+                <div class="project-card" data-category="web mobile">
+                    <div class="project-header">
+                        <div class="project-icon">&#127925;</div>
+                        <span class="project-type">AI-Powered</span>
+                    </div>
+                    <h3>LullaDream</h3>
+                    <p class="project-desc">
+                        AI-powered storytelling app with voice synthesis and cloning capabilities. Users can generate custom stories or use templates with personalized voice narration. PWA and Android.
+                    </p>
+                    <div class="project-scope">
+                        <span>UI Testing</span>
+                        <span>Integration Testing</span>
+                        <span>Payment Testing</span>
+                    </div>
+                    <div class="project-impact">
+                        <strong>Impact:</strong> Validated subscription and coin-based payment flows, ensuring seamless monetization experience
+                    </div>
+                </div>
+
+                <!-- Project 6: Ticketing System -->
+                <div class="project-card" data-category="web">
+                    <div class="project-header">
+                        <div class="project-icon">&#127915;</div>
+                        <span class="project-type">Internal Tool</span>
+                    </div>
+                    <h3>NEXcare</h3>
+                    <p class="project-desc">
+                        Internal platform for CS team to manage user reports and tickets. Includes worker/scheduler testing and chatbot integration. Tested across 3 major release phases.
+                    </p>
+                    <div class="project-scope">
+                        <span>Manual Testing</span>
+                        <span>API Testing</span>
+                        <span>Chatbot Testing</span>
+                        <span>Scheduler Testing</span>
+                    </div>
+                    <div class="project-impact">
+                        <strong>Impact:</strong> Ensured system stability across 3 release phases, validated chatbot and background job reliability
+                    </div>
+                </div>
+
+                <!-- Project 7: License Management -->
+                <div class="project-card" data-category="web">
+                    <div class="project-header">
+                        <div class="project-icon">&#128273;</div>
+                        <span class="project-type">SaaS</span>
+                    </div>
+                    <h3>NEXtrac</h3>
+                    <p class="project-desc">
+                        Platform for tracking and managing software licenses. Validated license CRUD operations and cross-product license activation to ensure proper entitlement flows.
+                    </p>
+                    <div class="project-scope">
+                        <span>Manual Testing</span>
+                        <span>API Testing</span>
+                        <span>Integration Testing</span>
+                    </div>
+                    <div class="project-impact">
+                        <strong>Impact:</strong> Verified license validity across multiple products, preventing unauthorized access and revenue leakage
+                    </div>
+                </div>
+
+                <!-- Project 8: Campaign Management -->
+                <div class="project-card" data-category="web automation">
+                    <div class="project-header">
+                        <div class="project-icon">&#128227;</div>
+                        <span class="project-type">Marketing</span>
+                    </div>
+                    <h3>GRObiz</h3>
+                    <p class="project-desc">
+                        Platform for creating and managing marketing campaigns (banners, videos, images) with integration to e-commerce frontend for content delivery.
+                    </p>
+                    <div class="project-scope">
+                        <span>Automation Testing</span>
+                        <span>Manual Testing</span>
+                        <span>API Testing</span>
+                        <span>Integration Testing</span>
+                    </div>
+                    <div class="project-impact">
+                        <strong>Impact:</strong> Automated regression tests with Selenium, ensuring campaign content delivered correctly to end-user platform
+                    </div>
+                </div>
+
+                <!-- Project 9: HRIS -->
+                <div class="project-card" data-category="web">
+                    <div class="project-header">
+                        <div class="project-icon">&#128101;</div>
+                        <span class="project-type">Internal Tool</span>
+                    </div>
+                    <h3>HRIS</h3>
+                    <p class="project-desc">
+                        Internal HR platform for employee data management, attendance tracking, meeting room booking, and reporting features.
+                    </p>
+                    <div class="project-scope">
+                        <span>UI Testing</span>
+                        <span>API Testing</span>
+                        <span>Integration Testing</span>
+                    </div>
+                    <div class="project-impact">
+                        <strong>Impact:</strong> Validated core HR workflows ensuring accurate attendance tracking and reporting for the organization
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <!-- LinkIT360 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>QA/QC Engineer</h3>
+                                <p class="company">PT. LinkIT360</p>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="location">South Jakarta</span>
+                                <span class="period">Feb 2025 - Present</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Creating various test cases with data flows and underlying business logic</li>
+                            <li>Experienced using collaborating tools such as Postman, Burp Suite, Sonar Cloud, Jira</li>
+                            <li>Conducted test case design, execution, and defect tracking across multiple projects</li>
+                            <li>Utilized tools such as Postman, Sonar Cloud to validate API behavior, identify vulnerabilities, and ensure code quality</li>
+                            <li>Collaborated closely with developers and product teams to analyze requirements and improve testing coverage</li>
+                            <li>Performed regression testing, smoke testing, and exploratory testing to validate builds and new features</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- NexSOFT -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>QA/QC Engineer</h3>
+                                <p class="company">PT. Paramadaksa Teknologi Nusantara (NexSOFT)</p>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="location">Tangerang, Banten</span>
+                                <span class="period">Nov 2022 - Feb 2025</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Responsible for developing and executing manual and automated tests using Katalon Studio and Java</li>
+                            <li>Creating various test cases with data flows and underlying business logic</li>
+                            <li>Experienced using collaborating tools such as Postman, BitBucket, Sourcetree, Trello</li>
+                            <li>Reduced manual testing time, allowing the team to focus on more critical tasks</li>
+                            <li>Proposed and implemented process improvements that decreased testing time, enhancing team productivity</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 3PM Solution -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Game Programmer (Internship)</h3>
+                                <p class="company">3PM Solution</p>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="location">Malang</span>
+                                <span class="period">Jun 2022 - Aug 2022</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Developed and created games using Unity and C#</li>
+                            <li>Enhanced the overall gameplay experience and ensuring smooth performance</li>
+                            <li>Created engaging motion for characters and elements</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section with Tech Stack Visualization -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">Tech Stack</h2>
+            
+            <!-- Tech Stack Grid -->
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Automation & Testing Frameworks</h3>
+                    <div class="tech-list">
+                        <div class="tech-item">
+                            <span class="tech-dot"></span>
+                            <span class="tech-name">Katalon Studio</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-dot"></span>
+                            <span class="tech-name">Selenium</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-dot"></span>
+                            <span class="tech-name">Playwright</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-dot"></span>
+                            <span class="tech-name">Postman</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-dot"></span>
+                            <span class="tech-name">JMeter</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="tech-list">
+                        <div class="tech-item">
+                            <span class="tech-dot"></span>
+                            <span class="tech-name">Java</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-dot"></span>
+                            <span class="tech-name">JavaScript</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-dot"></span>
+                            <span class="tech-name">TypeScript</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-dot"></span>
+                            <span class="tech-name">PHP</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-dot"></span>
+                            <span class="tech-name">C#</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Testing Expertise</h3>
+                    <div class="tech-list">
+                        <div class="tech-item">
+                            <span class="tech-dot"></span>
+                            <span class="tech-name">Manual Testing</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-dot"></span>
+                            <span class="tech-name">API Testing</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-dot"></span>
+                            <span class="tech-name">Automation Testing</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-dot"></span>
+                            <span class="tech-name">Regression Testing</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-dot"></span>
+                            <span class="tech-name">Integration Testing</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-dot"></span>
+                            <span class="tech-name">Load Testing</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-dot"></span>
+                            <span class="tech-name">Mobile Testing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Software & Collaboration</h3>
+                    <div class="tech-list">
+                        <div class="tech-item">
+                            <span class="tech-dot"></span>
+                            <span class="tech-name">VS Code</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-dot"></span>
+                            <span class="tech-name">Aqua</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-dot"></span>
+                            <span class="tech-name">DBeaver</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-dot"></span>
+                            <span class="tech-name">Jira</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-dot"></span>
+                            <span class="tech-name">Trello</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-dot"></span>
+                            <span class="tech-name">BitBucket</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-dot"></span>
+                            <span class="tech-name">Sourcetree</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <div class="tech-list">
+                        <div class="tech-item">
+                            <span class="tech-dot"></span>
+                            <span class="tech-name">Communication</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-dot"></span>
+                            <span class="tech-name">Attention to Detail</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-dot"></span>
+                            <span class="tech-name">Time Management</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-dot"></span>
+                            <span class="tech-name">Problem Solving</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-dot"></span>
+                            <span class="tech-name">Adaptability</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-dot"></span>
+                            <span class="tech-name">Critical Thinking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="edu-period">2025 - Present</div>
+                    <h3>Universitas Siber Asia</h3>
+                    <p class="edu-major">Informatics</p>
+                    <p class="edu-location">Jakarta</p>
+                    <div class="edu-topics">
+                        <span>Web Development</span>
+                        <span>Database</span>
+                        <span>Algorithm</span>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="edu-period">2019 - 2022</div>
+                    <h3>Telkom School Malang</h3>
+                    <p class="edu-major">Software Engineering</p>
+                    <p class="edu-location">Malang</p>
+                    <div class="edu-topics">
+                        <span>Web Development</span>
+                        <span>Database</span>
+                        <span>OOP</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-description">
+                I'm always open to discussing new opportunities, collaborations, 
+                or just having a chat about quality assurance and testing.
+            </p>
+            <div class="contact-links">
+                <a href="mailto:dhikanusantara00@gmail.com" class="contact-item">
+                    <div class="contact-icon">&#9993;</div>
+                    <div>
+                        <p class="contact-label">Email</p>
+                        <p class="contact-value">dhikanusantara00@gmail.com</p>
+                    </div>
+                </a>
+                <a href="tel:+6285731262296" class="contact-item">
+                    <div class="contact-icon">&#9742;</div>
+                    <div>
+                        <p class="contact-label">Phone</p>
+                        <p class="contact-value">+62 857-3126-2296</p>
+                    </div>
+                </a>
+                <a href="https://linkedin.com/in/andhikanusantara" target="_blank" class="contact-item">
+                    <div class="contact-icon">&#128279;</div>
+                    <div>
+                        <p class="contact-label">LinkedIn</p>
+                        <p class="contact-value">linkedin.com/in/andhikanusantara</p>
+                    </div>
+                </a>
+                <div class="contact-item">
+                    <div class="contact-icon">&#128205;</div>
+                    <div>
+                        <p class="contact-label">Location</p>
+                        <p class="contact-value">East Jakarta, Indonesia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Andhika Bagaskara Putra Nusantara. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
